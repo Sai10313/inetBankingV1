@@ -26,6 +26,7 @@ public class TC_AddNewCustomer_003 extends BaseClass {
 		
 		AddCustomerPage acp=new AddCustomerPage(driver);
 		acp.addCustomer();
+		driver.switchTo().alert().dismiss();
 		acp.setName("lkjhlkjh");
 		acp.setDob("13","10","2001");
 		acp.setAddress("Street");
